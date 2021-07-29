@@ -1,0 +1,41 @@
+<div id="themeTable">
+  <div id="relatedWorkOverlay"></div>
+  <div id="relatedWorkContainer">
+    <table id="relatedWorkTable">
+      <tr id="headerRow">
+        <th>Paper
+          <img id="filterToggleIcon" />
+        </th>
+      </tr>
+      <tr class="ourWorkRow">
+        <td class="ourWorkLabel">Own work</td>
+      </tr>
+      <tr id="filterRow">
+        <td>Filter
+          <a target="_blank" id="runQueryLink"><img id="runQueryIcon"/></a>
+          <a target="_blank" id="runQueryLinkGoogle"><img id="runQueryIconGoogle"/></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="tableCloseButton"">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <template id="themeTableRowTemplate">
+    <tr class="contentRow">
+      <!--<td class="workTitle"></td>-->
+      <td class="workTitleCell">
+        <div class="workTitle"></div>
+        <a target="_blank" class="citedByLink">Cited by...</a>
+      </td>
+    </tr>
+  </template>
+
+  <template id="themeTableAnnotation">
+    <div class="relatedWorkAnnotation">
+    </div>
+  </template>
+</div>

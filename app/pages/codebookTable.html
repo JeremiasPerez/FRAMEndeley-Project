@@ -1,0 +1,48 @@
+<div id="FRAMEndeleyCodebookTableParent">
+  <div id="FRAMEndeleyCodebookTableOverlay"></div>
+  <div id="FRAMEndeleyCodebookTableContainer">
+    <table id="FRAMEndeleycodebookTable">
+      <tr>
+        <th colspan="4" id="FRAMEndeleyCodebookTableThemeCell">
+          <span id="FRAMEndeleyCodebookTableThemeName"></span>
+          <img id="FRAMEndeleyCodebookBackToThemeTableButton"/>
+        </th>
+      </tr>
+      <tr id="FRAMEndeleyCodebookTableThemeDescriptionRow">
+        <td colspan="4">
+          <textarea id="FRAMEndeleyCodebookTableThemeDescription" contentEditable="true" placeholder="Insert a description"></textarea>
+        </td>
+      </tr>
+      <tr id="FRAMEndeleyCodebookTableHeaderRow">
+        <td>Code</td>
+        <td>Description</td>
+        <td>Operational</td>
+        <td>Synonyms</td>
+      </tr>
+    </table>
+  </div>
+  <div id="FRAMEndeleyCodeTableCloseButton">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <template id="FRAMEndeleyCodebookTableRowTemplate">
+    <tr class="FRAMEndeleyCodebookTableRow">
+      <td class="FRAMEndeleyCodebookCode"></td>
+      <td class="FRAMEndeleyCodebookDescription"><textarea contentEditable="true" placeholder="Insert a description"></textarea></td>
+      <td class="FRAMEndeleyCodebookOperational"><textarea contentEditable="true" placeholder="Insert text"></textarea></td>
+      <td class="FRAMEndeleyCodeSynonyms">
+        <div class="codeSynonymContainer"></div>
+        <textarea placeholder="Insert synonyms separated by comma"></textarea>
+      </td>
+    </tr>
+  </template>
+
+  <template id="FRAMEndeleyCodeSynonymTemplate">
+    <div class="codeSynonym"><span class="codeSynonymLabel"></span><span class="removeSynonymButton">x</span></div>
+  </template>
+
+</div>
+
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../scripts/jquery.min.js">
+  </script>
+  <title>FRAMEndeley options</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap-slider.min.css">
+  <style>
+    #mendeleyContainerBody.disabled{
+      opacity: 0.5;
+      background-color: #ccc;
+      pointer-events: none;
+    }
+    #hypothesisContainerBody.disabled{
+      opacity: 0.5;
+      background-color: #ccc;
+      pointer-events: none;
+    }
+    .externalService.disabled img{
+      opacity: 0.3;
+    }
+    .externalService.enabled img{
+      opacity: 1;
+    }
+    .externalService img{
+      min-height: 150px;
+      max-height: 150px;
+    }
+    #authorizationSuccess{
+      display:none;
+    }
+    #authorizationError{
+      display:none;
+    }
+    .serviceName{
+      font-size: 1.2em;
+      margin-left: 5%;
+    }
+    #mendeleyProjectMatching{
+      display:none;
+      margin-top:5%;
+      font-size:0.8em;
+    }
+    .slider-selection {
+      background: #BABABA;
+    }
+    .completenessOption{
+      width: 30%;
+      margin-top: 3%;
+      font-size: 1em;
+    }
+    .suggestionOption{
+      margin-top: 3%;
+      font-size: 1em;
+    }
+    .slider{
+      width: 60%;
+    }
+    .panel-body b{
+      margin-right:15px;
+      margin-left:15px;
+    }
+    .logo{
+      height:96px;
+    }
+    body{
+      background-color: #eee;
+    }
+    #onekinLogo{
+      width:200px;
+    }
+    #ehuLogo{
+      height:85px;
+    }
+    #analytics-permitted{
+      margin-right: 10px;
+    }
+    #analytics-permitted-label{
+      font-size: 130%;
+      font-weight: unset;
+    }
+  </style>
+</head>
+<body>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-2">
+        <!--<img class="logo" src="../images/icon128.png">-->
+        <img class="logo" src="../images/logo.png">
+      </div>
+      <div class="col-sm-6 col-md-10">
+        <h2 class="title">FRAMEndeley configuration</h2>
+      </div>
+    </div>
+    <br/>
+    <h3>Authorization request</h3>
+    Tick off to grant access to your account in the following platforms:
+    <br/><br/>
+    <div class="row">
+      <div class="col-sm-6 col-md-2">
+        <div class="thumbnail externalService disabled" id="mendeleyEnable">
+          <img src="../images/mendeley2.png">
+          <div class="caption">
+            <input type="checkbox" id="mendeleyEnableCheckbox"/><span class="serviceName">Mendeley</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-8">
+        <div id="authorizationSuccess" class="alert alert-success" role="alert"></div>
+        <div id="authorizationError" class="alert alert-danger" role="alert"></div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    Developed by <a href="http://onekin.org/">Onekin Web Engineering Research Group</a> |
+    <a href="http://onekin.org/portal/content/privacy-policy">Privacy policy</a> |
+    <a href="mailto:jeremias.perez@ehu.eus,oscar.diaz@ehu.eus?subject=FRAMEndeley - Contact">Contact</a>
+    <br/><br/><br/>
+    <a href="http://onekin.org/"><img id="onekinLogo" src="../images/onekinLogo.png" /></a>
+    <a href="https://www.ehu.eus/"><img id="ehuLogo" src="../images/ehu.png" /></a>
+  </div>
+</div>
+<script src="../scripts/bootstrap.min.js">
+</script>
+<script src="../scripts/options.js">
+</script>
+</body>
+</html>

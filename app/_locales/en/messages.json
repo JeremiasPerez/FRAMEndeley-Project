@@ -1,0 +1,30 @@
+{
+  "appName": {
+    "message": "FRAMEndeley",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "FRAMEndeley",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "Enrich Mendeley with Thematic Analysis functionality.",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "FRAMEndeley",
+    "description": "The title of the browser action button"
+  },
+  "pageActionTitle": {
+    "message": "FRAMEndeley",
+    "description": "The title of the browser action button"
+  },
+  "locating": {
+    "message": "Locating",
+    "description": "Annotator:purpose mode label"
+  },
+  "annotating": {
+    "message": "Annotating",
+    "description": "Annotator:purpose mode label"
+  }
+}

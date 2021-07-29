@@ -1,0 +1,224 @@
+#codeTableCloseButton {
+  position:fixed;
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  z-index: 20101022;
+  top: 1em;
+  right: 1em;
+  transition: all 0.5s ease;
+}
+
+#codeTableCloseButton span {
+  margin: 0 auto;
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  display: block;
+  background: #555;
+  transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+#codeTableCloseButton span:first-of-type {
+  transform: rotate(45deg) translate(14px, 14px);
+}
+#codeTableCloseButton span:nth-of-type(2) {
+  opacity: 0;
+}
+#codeTableCloseButton span:last-of-type {
+  transform: rotate(-45deg) translate(-11px, 11px);
+}
+
+#codeTableContainer{
+  width: 90%;
+  font-family: Calibri;
+  max-width:90%;
+  max-height:90%;
+  height:auto;
+  position:fixed;
+  top:5%;
+  left:5%;
+  z-index:200001;
+  /*background-color:white;*/
+  background-color: transparent;
+  overflow-y:scroll;
+  overflow-y:auto;
+  overflow-x:auto;
+}
+#backToThemeTableButton{
+  float:left;
+  height:30px;
+}
+#backToThemeTableButton:hover{
+  cursor:pointer;
+}
+#codeTableOverlay{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,0.7);
+  z-index:200000;
+}
+
+#codeTable{
+  padding:5px;
+  border-collapse:collapse;
+  margin-bottom:0px;
+  background-color:white;
+}
+
+#codeTable th{
+  font-size:25px;
+  font-weight:bold;
+}
+
+#codeTableHeaderRow td{
+  font-size:20px;
+}
+
+#codeTable #headerRow{
+  height:50px;
+  font-size:130%;
+}
+
+#codeTableHeaderRow{
+  height:50px;
+  font-size:130%;
+}
+
+#codeTableHeaderRow td{
+  text-align:center;
+}
+
+#codeTable td, th{
+  border: solid 1px black;
+}
+
+#codeTableHeaderRow td:nth-child(1){
+  width: 20%;
+}
+
+#codeTableHeaderRow td:nth-child(2){
+  width: 60%;
+}
+
+#codeTableHeaderRow td:nth-child(3){
+  width: 20%;
+}
+
+#codeTable tr:nth-child(n+1) td:nth-child(n+1){
+  padding: 5px;
+}
+
+#codeTable tr:nth-child(n+1) td:nth-child(n+1) div.codeTableAnnotation{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px;
+  /*max-height: 60px;*/
+  border: solid 1px #ccc;
+  overflow: hidden;
+  font-size:90%;
+  font-style:italic;
+  color:#333;
+}
+#codeTable tr:nth-child(n+1) td:nth-child(n+1) div.codeTableAnnotation:nth-child(n+1){
+  margin-top: 2px;
+}
+#codeTable .classificationList{
+  width:100%;
+  text-align:center;
+}
+.classificationList span::after{
+  content: ", ";
+}
+.classificationList span:last-child::after{
+  content: "";
+}
+
+#codeTable input{
+  width: 97%;
+}
+
+#FRAMEndeleyCodeAutocompleteContainer{
+  position:fixed;
+  position:absolute;
+  /*background-color: white;*/
+  background-color: transparent;
+  /*width:17%;*/
+  width:19%;
+}
+.FRAMEndeleyCodeAutocompleteElementTooltip{
+  display:none;
+  position:absolute;
+  left:-421px;
+  top:0px;
+  height:220px;
+  border:solid 1px #ccc;
+  border-radius: 5px 0px 5px 5px;
+}
+.FRAMEndeleyCodeAutocompleteElementTooltip.upwards{
+  top:-220px;
+  border-radius: 5px 5px 5px 0px;
+}
+.FRAMEndeleyCodeAutocompleteElement{
+  position:relative;
+  background-color:white;
+}
+/*
+.FRAMEndeleyCodeAutocompleteElement:hover .FRAMEndeleyCodeAutocompleteElementTooltip{
+  display:initial;
+}
+
+.FRAMEndeleyCodeAutocompleteElement:hover .FRAMEndeleyCodeAutocompleteElementLabel{
+  background-color:#cde8fa;
+}
+*/
+
+.FRAMEndeleyCodeAutocompleteElement.FRAMEndeleyAutocompleteItemActive .FRAMEndeleyCodeAutocompleteElementTooltip{
+  display:initial;
+}
+.FRAMEndeleyCodeAutocompleteElement.FRAMEndeleyAutocompleteItemActive .FRAMEndeleyCodeAutocompleteElementLabel{
+  background-color:#cde8fa;
+}
+
+.FRAMEndeleyCodeAutocompleteElementLabel{
+  border:solid 1px #ccc;
+  min-height:25px;
+  font-size:110%;
+  padding:3px 3px 3px 6px;
+  margin-top:-1px;
+}
+.FRAMEndeleyTooltipContent{
+  width:400px;
+  height:200px;
+  background-color:white;
+  padding:10px;
+  border-radius: 5px 0px 5px 5px;
+}
+.FRAMEndeleyTooltipContent textarea{
+  border:solid 1px #ddd;
+  border-style: dotted;
+  width:100%;
+  height:35%;
+  resize:none;
+  font-size:120%;
+}
+.FRAMEndeleyCodeAutocompleteDescriptionLabel{
+  font-size:130%;
+}
+.FRAMEndeleyCodeAutocompleteOperationalLabel{
+  font-size:130%;
+}
+
+#codeTable .workTitle:hover{
+  cursor:zoom-in;
+}
+
+/*#codeTable .codeTableWorkRow:not(.hiddenCodeTableWorkRow):nth-child(odd){*/
+#codeTable .codeTableWorkRow:nth-child(2n){
+  background-color:#ddd;
+}

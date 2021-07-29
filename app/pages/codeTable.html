@@ -1,0 +1,60 @@
+<div id="codeTableParent">
+  <div id="codeTableOverlay"></div>
+  <div id="codeTableContainer">
+    <table id="codeTable">
+      <tr id="headerRow">
+        <th colspan="3" id="coteTableTheme"><img id="backToThemeTableButton"/></th>
+      </tr>
+      <tr id="codeTableHeaderRow">
+        <td>Work</td>
+        <td>Quote</td>
+        <td>Code</td>
+      </tr>
+      <tr class="ourWorkRow">
+        <td>Our work</td>
+        <td></td>
+        <td>
+          <input type="text"/>
+        </td>
+      </tr>
+    </table>
+    <datalist id="quoteCodeDatalist">
+    </datalist>
+  </div>
+  <div id="codeTableCloseButton">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <template id="codeTableRowTemplate">
+    <tbody class="codeTableWorkRow">
+      <tr>
+        <td class="workTitle"></td>
+      </tr>
+    </tbody>
+  </template>
+
+  <template id="codeTableQuoteTemplate">
+    <td class="workQuote">
+      <div class="codeTableAnnotation"></div>
+    </td>
+    <td class="quoteCode">
+      <input type="text"/>
+    </td>
+  </template>
+
+  <template id="codeTableAutocompleteElement">
+    <div class="FRAMEndeleyCodeAutocompleteElement">
+      <div class="FRAMEndeleyCodeAutocompleteElementLabel"></div>
+      <div class="FRAMEndeleyCodeAutocompleteElementTooltip">
+        <div class="FRAMEndeleyTooltipContent">
+          <div class="FRAMEndeleyCodeAutocompleteDescriptionLabel">Description:</div>
+          <textarea placeholder="Insert a description" class="FRAMEndeleyCodeAutocompleteDescription"></textarea>
+          <div class="FRAMEndeleyCodeAutocompleteOperationalLabel">Operational:</div>
+          <textarea placeholder="Insert a text" class="FRAMEndeleyCodeAutocompleteOperational"></textarea>
+        </div>
+      </div>
+    </div>
+  </template>
+</div>

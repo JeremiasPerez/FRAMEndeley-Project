@@ -1,0 +1,277 @@
+#tableCloseButton {
+  position:fixed;
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  z-index: 20101022;
+  top: 1em;
+  right: 1em;
+  transition: all 0.5s ease;
+}
+
+#tableCloseButton span {
+  margin: 0 auto;
+  width: 80%;
+  height: 2px;
+  margin: 0 auto;
+  display: block;
+  background: #555;
+  transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+#tableCloseButton span:first-of-type {
+  transform: rotate(45deg) translate(14px, 14px);
+}
+#tableCloseButton span:nth-of-type(2) {
+  opacity: 0;
+}
+#tableCloseButton span:last-of-type {
+  transform: rotate(-45deg) translate(-11px, 11px);
+}
+
+#relatedWorkContainer{
+  font-family: Calibri;
+  max-width:90%;
+  max-height:90%;
+  width:90%;
+  height:auto;
+  position:fixed;
+  top:5%;
+  left:5%;
+  z-index:200001;
+  background-color:white;
+  overflow-y:auto;
+  overflow-x:auto;
+}
+#relatedWorkOverlay{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0,0,0,0.7);
+  z-index:200000;
+}
+
+#relatedWorkTable{
+  padding:5px;
+  border-collapse:collapse;
+  margin-bottom:0px;
+  width: 100%;
+}
+
+#relatedWorkTable th{
+  font-size:20px;
+}
+
+#relatedWorkTable th:nth-child(n+2):hover{
+  cursor:zoom-in;
+}
+
+#relatedWorkTable .workTitle{
+  cursor:zoom-in;
+  margin-bottom:20px;
+}
+
+#relatedWorkTable tr:nth-child(1){
+  height:50px;
+  font-size:130%;
+}
+
+#relatedWorkTable td, th{
+  border: solid 1px black;
+}
+
+#relatedWorkTable tr:nth-child(1) th:nth-child(1){
+  background-color: white;
+}
+
+#relatedWorkTable .workTitle{
+  background-color: white;
+}
+
+#relatedWorkTable tr:nth-child(n+1) td:nth-child(n+1){
+  padding: 5px;
+}
+
+#relatedWorkTable tr:nth-child(n+1) td:nth-child(n+1) div.relatedWorkAnnotation{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px;
+  max-height: 60px;
+  border: solid 1px #999;
+  overflow: hidden;
+  font-size:90%;
+  font-style:italic;
+  color:#111;
+  /*word-break:break-all;*/
+  word-break:break-word;
+  hyphens:auto;
+  text-align:justify;
+}
+#relatedWorkTable tr:nth-child(n+1) td:nth-child(n+1) div.relatedWorkAnnotation:nth-child(n+1){
+  margin-top: 2px;
+}
+#relatedWorkTable .classificationList{
+  width:100%;
+  text-align:center;
+}
+.classificationList span::after{
+  content: ", ";
+}
+.classificationList span:last-child::after{
+  content: "";
+}
+.relatedWorkAnnotation{
+  cursor:grab;
+}
+.relatedWorkAnnotation:active{
+  cursor:grabbing;
+}
+.themeDependenceIcon{
+  width:20px;
+  position:relative;
+  float:left;
+  opacity:0.6;
+}
+.themeDependenceIcon:hover{
+  cursor:default;
+}
+#relatedWorkTable .highlightedCell{
+  filter: brightness(70%);
+}
+
+.context-menu-root{
+  z-index:200002 !important;
+}
+
+#themeTable #filterRow select{
+  width:100%;
+}
+
+.contentRow.filterActive{
+  display:none;
+}
+#filterToggleIcon{
+  width:20px;
+  height:20px;
+  vertical-align: middle;
+  opacity: 0.6;
+  margin-left: 8px;
+  transition: 0.2s ease-in-out;
+}
+#filterToggleIcon:hover{
+  cursor:pointer;
+}
+
+#filterRow{
+  display:none;
+}
+#filterRow.displayedRow{
+  display:contents;
+}
+
+#runQueryIcon{
+  width:20px;
+  height:20px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+#runQueryLink #runQueryIcon{
+  /*filter: grayscale(100%);*/
+  opacity: 0.3;
+}
+#runQueryLink #runQueryIcon:hover{
+  cursor:default;
+}
+#runQueryLink[href] #runQueryIcon{
+  /*filter: grayscale(0%);*/
+  opacity: 1;
+}
+#runQueryLink[href] #runQueryIcon:hover{
+  cursor:pointer;
+}
+
+#runQueryIconGoogle{
+  width:20px;
+  height:20px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+#runQueryLinkGoogle #runQueryIconGoogle{
+  /*filter: grayscale(100%);*/
+  opacity: 0.5;
+}
+#runQueryLinkGoogle #runQueryIconGoogle:hover{
+  cursor:default;
+}
+#runQueryLinkGoogle[href] #runQueryIconGoogle{
+  /*filter: grayscale(0%);*/
+  opacity: 1;
+}
+#runQueryLinkGoogle[href] #runQueryIconGoogle:hover{
+  cursor:pointer;
+}
+
+.citedByLink{
+  color:#0b23fb;
+}
+.citedByLink:hover{
+  text-decoration:underline;
+}
+
+#draggingTable{
+  position:absolute;
+  background-color:white;
+  top:-1500px;
+  left:-1500px;
+  z-index:200006;
+}
+.draggingColumn{
+  opacity:0.4;
+}
+#draggingTable select{
+  width:100%;
+}
+#draggingTable td,th{
+  border:solid 1px black;
+}
+#relatedWorkTable th, #codeTable th, #FRAMEndeleycodebookTable th{
+  border-bottom: solid 1px black;
+}
+
+#themeTable #headerRow th, #codeTable tr:nth-child(1) th{
+  vertical-align: middle;
+}
+
+#themeTable .relatedWorkAnnotation.duplicatedCode{
+  display:none;
+}
+
+
+.alluvialDialogContainer{
+  height:90%;
+}
+
+.ourWorkRow td{
+  word-break: break-all;
+}
+
+@charset "UTF-8";/*!
+ * jQuery contextMenu - Plugin for simple contextMenu handling
+ *
+ * Version: v2.7.0
+ *
+ * Authors: BjÃ¶rn Brala (SWIS.nl), Rodney Rehm, Addy Osmani (patches for FF)
+ * Web: http://swisnl.github.io/jQuery-contextMenu/
+ *
+ * Copyright (c) 2011-2018 SWIS BV and contributors
+ *
+ * Licensed under
+ *   MIT License http://www.opensource.org/licenses/mit-license
+ *
+ * Date: 2018-10-02T14:29:27.829Z
+ */@-webkit-keyframes cm-spin{0%{-webkit-transform:translateY(-50%) rotate(0);transform:translateY(-50%) rotate(0)}100%{-webkit-transform:translateY(-50%) rotate(359deg);transform:translateY(-50%) rotate(359deg)}}@-o-keyframes cm-spin{0%{-webkit-transform:translateY(-50%) rotate(0);-o-transform:translateY(-50%) rotate(0);transform:translateY(-50%) rotate(0)}100%{-webkit-transform:translateY(-50%) rotate(359deg);-o-transform:translateY(-50%) rotate(359deg);transform:translateY(-50%) rotate(359deg)}}@keyframes cm-spin{0%{-webkit-transform:translateY(-50%) rotate(0);-o-transform:translateY(-50%) rotate(0);transform:translateY(-50%) rotate(0)}100%{-webkit-transform:translateY(-50%) rotate(359deg);-o-transform:translateY(-50%) rotate(359deg);transform:translateY(-50%) rotate(359deg)}}@font-face{font-family:context-menu-icons;font-style:normal;font-weight:400;src:url(font/context-menu-icons.eot?2gb3e);src:url(font/context-menu-icons.eot?2gb3e#iefix) format("embedded-opentype"),url(font/context-menu-icons.woff2?2gb3e) format("woff2"),url(font/context-menu-icons.woff?2gb3e) format("woff"),url(font/context-menu-icons.ttf?2gb3e) format("truetype")}.context-menu-icon-add:before{content:"\EA01"}.context-menu-icon-copy:before{content:"\EA02"}.context-menu-icon-cut:before{content:"\EA03"}.context-menu-icon-delete:before{content:"\EA04"}.context-menu-icon-edit:before{content:"\EA05"}.context-menu-icon-loading:before{content:"\EA06"}.context-menu-icon-paste:before{content:"\EA07"}.context-menu-icon-quit:before{content:"\EA08"}.context-menu-icon::before{position:absolute;top:50%;left:0;width:2em;font-family:context-menu-icons;font-size:1em;font-style:normal;font-weight:400;line-height:1;color:#2980b9;text-align:center;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.context-menu-icon.context-menu-hover:before{color:#fff}.context-menu-icon.context-menu-disabled::before{color:#bbb}.context-menu-icon.context-menu-icon-loading:before{-webkit-animation:cm-spin 2s infinite;-o-animation:cm-spin 2s infinite;animation:cm-spin 2s infinite}.context-menu-icon.context-menu-icon--fa{display:list-item;font-family:inherit;line-height:inherit}.context-menu-icon.context-menu-icon--fa::before{position:absolute;top:50%;left:0;width:2em;font-family:FontAwesome;font-size:1em;font-style:normal;font-weight:400;line-height:1;color:#2980b9;text-align:center;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.context-menu-icon.context-menu-icon--fa.context-menu-hover:before{color:#fff}.context-menu-icon.context-menu-icon--fa.context-menu-disabled::before{color:#bbb}.context-menu-icon.context-menu-icon--fa5{display:list-item;font-family:inherit;line-height:inherit}.context-menu-icon.context-menu-icon--fa5 i,.context-menu-icon.context-menu-icon--fa5 svg{position:absolute;top:.3em;left:.5em;color:#2980b9}.context-menu-icon.context-menu-icon--fa5.context-menu-hover>i,.context-menu-icon.context-menu-icon--fa5.context-menu-hover>svg{color:#fff}.context-menu-icon.context-menu-icon--fa5.context-menu-disabled i,.context-menu-icon.context-menu-icon--fa5.context-menu-disabled svg{color:#bbb}.context-menu-list{position:absolute;display:inline-block;min-width:13em;max-width:26em;padding:.25em 0;margin:.3em;font-family:inherit;font-size:inherit;list-style-type:none;background:#fff;border:1px solid #bebebe;border-radius:.2em;-webkit-box-shadow:0 2px 5px rgba(0,0,0,.5);box-shadow:0 2px 5px rgba(0,0,0,.5)}.context-menu-item{position:relative;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;padding:.2em 2em;color:#2f2f2f;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:#fff}.context-menu-separator{padding:0;margin:.35em 0;border-bottom:1px solid #e6e6e6}.context-menu-item>label>input,.context-menu-item>label>textarea{-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}.context-menu-item.context-menu-hover{color:#fff;cursor:pointer;background-color:#2980b9}.context-menu-item.context-menu-disabled{color:#bbb;cursor:default;background-color:#fff}.context-menu-input.context-menu-hover{color:#2f2f2f;cursor:default}.context-menu-submenu:after{position:absolute;top:50%;right:.5em;z-index:1;width:0;height:0;content:'';border-color:transparent transparent transparent #2f2f2f;border-style:solid;border-width:.25em 0 .25em .25em;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}.context-menu-item.context-menu-input{padding:.3em .6em}.context-menu-input>label>*{vertical-align:top}.context-menu-input>label>input[type=checkbox],.context-menu-input>label>input[type=radio]{position:relative;top:.12em;margin-right:.4em}.context-menu-input>label{margin:0}.context-menu-input>label,.context-menu-input>label>input[type=text],.context-menu-input>label>select,.context-menu-input>label>textarea{display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.context-menu-input>label>textarea{height:7em}.context-menu-item>.context-menu-list{top:.3em;right:-.3em;display:none}.context-menu-item.context-menu-visible>.context-menu-list{display:block}.context-menu-accesskey{text-decoration:underline}
+/*# sourceMappingURL=jquery.contextMenu.min.css.map */

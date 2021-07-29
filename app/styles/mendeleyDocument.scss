@@ -1,0 +1,52 @@
+
+#FRAMEndeleyFolderSelection{
+  /*position: absolute;*/
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #CFCFCF;
+  background-color: #565656;
+  height: 60%;
+  margin-top: 10px;
+  border:none;
+  margin-left: 50px;
+  max-width: 150px;
+}
+
+#FRAMEndeleyCanvasButton{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  paddingLeft: 2px;
+  paddingTop: 16px;
+  text-decoration: none;
+  margin-left:20px;
+}
+#FRAMEndeleyCanvasButton:hover{
+  filter:brightness(2);
+}
+.textLayer span{
+  height:auto !important;
+}
+
+#CreateCanvasButton{
+  margin-top: 4px;
+  margin-right: 5px;
+  filter: invert(0.8);
+  height: 40px;
+}
+
+#FRAMEndeleyCanvasButton span{
+  color: white;
+}
+
+div[class^="AnnotationMenuStyle"] div[class*="ListAnnotationColours"]{
+  flex-direction: column;
+}
+div[class^="AnnotationMenuStyle"] div[class*="ListAnnotationColours"] div[class*="ListItem"]{
+  flex-direction: row;
+  margin-top: 5px;
+}
+div[class^="AnnotationMenuStyle"] div[class*="ListAnnotationColours"] div[class*="ListItem"] span{
+  margin-left: 5px;
+}

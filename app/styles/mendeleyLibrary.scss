@@ -1,0 +1,37 @@
+
+#FRAMEndeley_themeTableButtonContainer{
+  margin-left:50px;
+  cursor:pointer;
+  width: -webkit-fill-available;
+}
+
+#FRAMEndeley_themeTableButton {
+  width: 16px;
+  margin-left: 8px;
+  /*margin-top: 8px;*/
+}
+
+#FRAMEndeley_themeTableButtonSpan {
+  position: absolute;
+  padding-left: 6px;
+  /*padding-top: 9px;*/
+  color: rgb(73, 73, 73);
+}
+
+.swal2-container {
+  z-index: 2000000 !important;
+}
+
+#FRAMEndeley_themeTableButton{
+  opacity:0.7;
+}
+
+#framendeleyLogo {
+  height: 24px;
+  opacity: 0.8;
+  cursor:pointer;
+}
+
+#relatedWorkTable .relatedWorkAnnotation[annotationcode] {
+  font-weight: bold;
+}
